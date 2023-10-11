@@ -1,0 +1,3 @@
+Building a symbol table in assembly code typically involves parsing the assembly code to
+identify user-defined symbols and 
+their corresponding memory addresses.
