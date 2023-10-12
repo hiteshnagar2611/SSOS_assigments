@@ -1,0 +1,38 @@
+Include the necessary C++ standard libraries:
+
+iostream: for input and output operations.
+fstream: for file input/output operations.
+sstream: for string stream operations.
+vector: for using a 2D vector.
+bits/stdc++.h: This header includes commonly used headers like iostream, fstream, etc.
+Define the main function.
+
+Declare a fstream object named file to work with the input file.
+
+Open the file "file.txt" in read-only mode (ios::in) using file. Check if the file is successfully opened:
+
+If the file is open, print "file successfully opened."
+If the file is not open, print "file is not opened."
+Declare a 2D vector named vec to store the words read from the file.
+
+Initialize an integer variable i to keep track of the current row in the 2D vector.
+
+Declare a string variable line to store each line read from the file.
+
+Use a while loop to read the file line by line until the end of the file is reached:
+a. Add an empty vector to the 2D vector vec to create a new row.
+b. Create a stringstream object str from the line to tokenize the line into words.
+c. Declare a string variable word to store each word.
+d. Use a while loop to extract words from the str and push them into the current row of vec.
+
+Use nested for loops to print the contents of the 2D vector:
+a. Iterate over the rows (i) of the vector.
+b. Iterate over the columns (j) within each row and print each word followed by a space.
+c. Increment the count variable to keep track of the number of words in the file.
+d. Print a newline character after each row to separate rows.
+
+Print the total number of words in the file using the count variable.
+
+Close the file using file.close().
+
+End the main function and return 0 to indicate successful program execution.
